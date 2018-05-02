@@ -13,10 +13,10 @@ public class solution {
         String[] mapping = {"0","1","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
         ans.add("");
         for(int i = 0; i < digits.length(); i++){
-            int x = Character.getNumericValue(digits.charAt(i));
-            while(ans.peek().length() == i){
-                String s = ans.remove();
-                for(char c : mapping[x].toCharArray()){
+            int x = Character.getNumericValue(digits.charAt(i));  //extract phone number digit, prepare to map
+            while(ans.peek().length() == i){                 //only change elements that are not touched in this round
+                String s = ans.remove();                     //extract top element in ans
+                for(char c : mapping[x].toCharArray()){      //append each value in the mapping to each existing element
                     ans.add(s + c);
                 }
             }
