@@ -1,24 +1,31 @@
-    public class Rabbits{
-       public int numRabbits(int[] answers) {
-       HashMap<Integer, Integer> hm = new HashMap<>();
-        int result = 0;
-        for(int i = 0; i < answers.length; i++){
-            if(!hm.containsKey(answers[i])){
-                hm.put(answers[i], 1);
-            }else{
-                hm.put(answers[i], hm.get(answers[i]) + 1);
-            }
+/* https://leetcode.com/problems/rabbits-in-forest/description/
+   781. Rabbits in Forest
+ */
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input[] = new int[3];
+        for(int i = 0; i < 3; i++){
+            input[i] = sc.nextInt();
         }
-        Set<Integer> keys = hm.keySet();
-        Iterator<Integer> iter = keys.iterator();
-        while(iter.hasNext()){
-            int curKey = iter.next();
-            int curValue = hm.get(curKey);
-            result += curValue / (curKey + 1) * (curKey + 1);
-            if(curValue % (curKey + 1) != 0){
-                result += (curKey + 1);
+
+        int n = numRabbits(input);
+        System.out.println(n);
+    }
+    static int numRabbits(int[] answers){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < answers.length; i++){
+            int num = answers[i];
+            int current = map.getOrDefault(num,0);
+            map.put(num,current + 1);
+        }
+        int result = 0;
+        for(Integer key : map.keySet()){
+            result += map.get(key) / (key + 1) * (key + 1);
+            if(map.get(key) % (key + 1)!= 0){
+                result += (key + 1);
             }
         }
         return result;
-        }
-    }
+     }
+}
