@@ -1,7 +1,7 @@
 /**
-* https://leetcode.com/problems/license-key-formatting/description/
-* 482. License Key Formatting
-* @author Jiayu Yao
+ * https://leetcode.com/problems/license-key-formatting/description/
+ * 482. License Key Formatting
+ * @author Jiayu Yao
  */
 public class Solution {
     public String licenseKeyFormatting(String S, int K) {
