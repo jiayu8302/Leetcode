@@ -1,7 +1,7 @@
 /**
-* https://leetcode.com/problems/remove-element/description/
-* 27. Remove Element
-* @author Jiayu Yao
+ *https://leetcode.com/problems/remove-element/description/
+ * 27. Remove Element
+ * @author Jiayu Yao
  */
 class Solution {
     public int removeElement(int[] nums, int val) {
