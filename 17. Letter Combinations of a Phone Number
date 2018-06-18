@@ -1,5 +1,7 @@
-/*https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
-  17. Letter Combinations of a Phone Number
+/**
+ * https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+ * 17. Letter Combinations of a Phone Number
+ * @author Jiayu Yao
  */
 import java.util.LinkedList;
 import java.util.List;
