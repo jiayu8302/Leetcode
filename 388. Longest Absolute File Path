@@ -1,6 +1,8 @@
-/* https://leetcode.com/problems/longest-absolute-file-path/description/
-   388. Longest Absolute File Path
-*/
+/**
+ * https://leetcode.com/problems/longest-absolute-file-path/description/
+ * 388. Longest Absolute File Path
+ * @author Jiayu Yao
+ */
 class Solution {
     public static void main(String[] args) {
         int n = lengthLongestPath("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext");
