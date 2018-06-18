@@ -1,6 +1,7 @@
-/*
-https://leetcode.com/problems/generate-parentheses/description/
-22. Generate Parentheses
+/**
+ * https://leetcode.com/problems/generate-parentheses/description/
+ * 22. Generate Parentheses
+ * @author Jiayu Yao
  */
 import java.util.ArrayList;
 import java.util.List;
