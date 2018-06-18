@@ -1,6 +1,7 @@
-/*
-https://leetcode.com/problems/valid-parentheses/description/
-20. Valid Parenthless
+/**
+ * https://leetcode.com/problems/valid-parentheses/description/
+ * 20. Valid Parenthless
+ * @author Jiayu Yao
  */
 import java.util.Stack;
 
