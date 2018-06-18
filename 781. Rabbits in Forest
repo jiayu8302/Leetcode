@@ -1,5 +1,7 @@
-/* https://leetcode.com/problems/rabbits-in-forest/description/
-   781. Rabbits in Forest
+/**
+ * https://leetcode.com/problems/rabbits-in-forest/description/
+ * 781. Rabbits in Forest
+ * @author Jiayu Yao
  */
 public class Solution {
     public static void main(String[] args) {
